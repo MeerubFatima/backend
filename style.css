@@ -1,0 +1,8 @@
+body{
+    height: 90vh;
+    background-image: url('https://images.pexels.com/photos/6985045/pexels-photo-6985045.jpeg?auto=compress&cs=tinysrgb&dpr=1&w=500');
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: poppins;
+    font-size: 23px;
+}
