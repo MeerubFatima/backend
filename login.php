@@ -8,7 +8,7 @@ if($_SERVER['REQUEST_METHOD']=='POST'){
 $username=$_POST['username'];
 $password=md5($_POST['password']);
 
-$sql="select * from `resdata` where username='$username' and password'$password'";
+$sql="select * from `resdata` where username='$username' and password='$password'";
 $result=mysqli_query($con,$sql);
 if($result){
     $num=mysqli_num_rows($result);

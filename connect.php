@@ -1,6 +1,6 @@
 <?php
 $con=mysqli_connect('localhost','root','','registration');
-if($con){
+if(!$con){
     die(mysqli_error($con));
 }
 ?>

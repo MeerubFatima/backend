@@ -9,10 +9,10 @@ $username=$_POST['username'];
 $password=md5($_POST['password']);
 $cpassword=md5($_POST['cpassword']);
 
-           // $sql="insert into `resdata` (username,password) values('$username','$password')";
-           // $result=mysqli_query($con,$sql);
+            //$sql="insert into `resdata` (username,password) values('$username','$password')";
+            //$result=mysqli_query($con,$sql);
             //if($result){
-               // echo "data inserted successfully";
+              //  echo "data inserted successfully";
             //}else{
               //  die(mysqli_error($con));
             //}
@@ -27,12 +27,13 @@ if($result){
     }
     else{
         if($password===$cpassword){
-            $sql="insert into `data` (username,password) values ('$username','$password')";
+            $sql="insert into `resdata` (username,password) values ('$username','$password')";
         $result=mysqli_query($con,$sql);
         if($result){
            // echo "signup successfull";
            $success=1;
-        }}else{
+        }
+        }else{
             //echo "passsword didn't match";
             $match=1;
         }
